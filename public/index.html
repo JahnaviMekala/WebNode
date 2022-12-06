@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="stylegrid.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CSS GRID</title>
+</head>
+<body>
+    <div class="container">
+
+        
+        <nav class="topnav" id="top_nav">
+            <a class="icon menuItemClass">MENU
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="Navoptions" style="display: none;">
+            <a  href="#name">Home</a>
+                <a  href="#name">About</a>
+                <a  href="#education">Education</a>
+                <a  href="#skill_title">Projects</a>
+                <a  href="#pro_title">Experience</a>
+                <a  href="#experience">Blogs</a>
+                
+        </nav>
+        <div id="name">About</div>
+     
+<div id="landing_page">
+
+              <div >
+                <p class="self">I am Jahnavi Mekala and This is my second semester in University of New Haven. I am doing my Masters in Computer Science. I have 2 years of Experience in IT Industry I worked as Service Now admin and developer.</p>
+               
+            </div>
+
+</div>
+<div id="education">
+    
+    
+        <div >
+            <h1>Education</h1>
+        <ul>
+            <b>Masters :University of New Haven
+             Masters in Computer Science : CGPA: 3.94/4.00.</b>
+           
+        </ul>
+        <ul>
+            <b>Bachelor of Technology, Computers Science and Engineering - CGPA: 8.61/10.0                              2015-2019
+
+                Relevant Coursework:</b> Problem Solving using C, Object Oriented Programming ,Data Structures Using C, Advance Data Structures ,Computer Graphics, Operating Systems , Web Technologies ,Software Engineering , Mobile Application Development ,Big Data ,Cloud Computing.
+            
+        </ul>
+        </div>
+   
+</div>
+
+
+<div id="skill_title">Projects</div>
+<div id="skillset1">
+   
+    <ul>
+        <b>Online Help Desk for College Facilities:</b> 
+        
+        <li>A web application accessed throughout the campus aimed at providing different services of the college to students which saves a lot of time and manual intervention.
+        </li>
+        <li>Aimed at providing different services of the college to the students for which they normally have to wait too long. This application can be accessed throughout the campus. The present system which is totally manual consumes a lot of time for a request to be satisfied. Onlinehelpdesk will allow students to easily request for different services via this online portal. The corresponding facility heads will then take necessary actions and try to fulfill the requests.</li>
+        <li>Languages used in  this project : HTML,Server side script, JSP
+        </li>
+    </ul>
+</div>
+<div id="skillset2">
+   
+    <ul>
+        <b>Implementation Of Random Walk Mobility Model For RPL Protocol
+        </b> 
+        <li>Analyzing the mobility of nodes with Random Walk mobility modal using Cooja simulator in Contiki  os</li>
+        <li>Mobility model is designed to describe the movement pattern of nodes, and how their location and speed change over time. In Random based mobility model, the nodes move freely without any restrictions. In this project we analyse the mobility of the nodes using Random Walk (RW) model using COOJA simulator.
+        </li>
+        <li> Tools used in this project : Cooja simulator,VM ware software , Contiki.</li>
+    </ul>
+</div>
+<div id="skillset3">
+    <ul>
+        <b> Number Guessing
+        </b> 
+        <li>This is one of the simple python projects yet an exciting one. You can even call it a mini-game. This project is particularly useful for beginners.</li>
+        <li>Mobility model is designed to describe the movement pattern of nodes, and how their location and speed change over time. In Random based mobility model, the nodes move freely without any restrictions. In this project we analyse the mobility of the nodes using Random Walk (RW) model using COOJA simulator.
+        </li>
+        <li> Tools used in this project : Cooja simulator,VM ware software , Contiki.</li>
+    </ul>
+    
+   
+</div>
+
+<div id="pro_title">
+Experience
+</div>
+<div id="project1">
+    <ul>
+        <h3><b>HCL Technologies </b> </h3>
+        <b>Senior Analyst:</b> 
+        <li>Operated as a technical consultant on Service Now.</li>
+        <li>Worked on two projects at same time Moog and Gray bar.</li>
+        <li>Worked with Moog and Graybar on strict SLA 's and solved more than 200+cases that involved multiple P1 and P2's (high priority incidents and tasks) without most accuracy.</li>
+        <li>Involved in Testing and Debugging in all specific scenarios when upgrading Service Now to Quebec.</li>
+        <li>worked on different modules in Service Now like Incident, Problem, Change, Task, Vendor Portal,Service Portal,Discovery</li>
+    </ul>
+   
+</div>
+
+
+<div id="experience">
+    <p id ="exptitle1" class="divTitle"><h1>Blogs</p>
+   
+    <h4>Blog1</h4>
+    <b>CLOUD COMPUTING </b>
+    <li>Theories and practices of management often spring from the opportunities created by new technologies.</li>
+    <li>
+        Client-server technology begat enterprise resource planning systems, and the consequent system-wide visibility that was required for what we call business process management (BPM).
+        </li>
+    
+    <h4>Blog2</h4>
+    <b>BLOCK CHAIN </b>
+    <li> Blockchain is a type of shared database that differs from a typical database in the way that it stores information; blockchains store data in blocks that are then linked together via cryptography.
+    </li>
+    <li>As new data comes in, it is entered into a fresh block. Once the block is filled with data, it is chained onto the previous block, which makes the data chained together in chronological order.</li>
+</div>
+
+<div id="footer">
+
+    </div>
+</div>
+    </div>
+ 
+<script>
+    
+    const Navoptions = document.querySelector(".Navoptions")
+
+const menuItem = document.querySelector(".menuItemClass")
+menuItem.addEventListener("mouseover", expandNav)
+
+function expandNav() {
+    Navoptions.style.display = "inline-grid"
+    setTimeout(function() {
+        Navoptions.style.display = "none"
+    }, 3000);
+}
+
+</script>
+</body>
+
+<style>
+
+
+
+
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+    --blue:#1e90ff;
+    --white:#613659;
+    --yellowish:#F7C600;
+    --looksred:rgb(238, 115, 125);
+    --lookspur:#ceabdc;
+    --lookspurple:rgb(240, 70, 240);
+}
+
+.container{
+display:grid;
+height:20vh;
+grid-gap:5px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 0.02fr 0.02fr 0.02fr 0.1fr 0.02fr 0.2fr 0.02fr 0.2fr 0.3fr 1fr 0.05fr;
+grid-template-areas: "nav nav nav"
+"name name name"
+"landing_page landing_page landing_page"
+"education education education"
+"skill_title skill_title skill_title"
+"skillset1 skillset2 skillset3"
+"pro_title pro_title pro_title"
+"project1 project1 project1"
+"experience experience experience";
+}
+
+img{
+    position:absolute;
+    height:300px;
+    width:200px;
+    border-radius: 210px;
+    left:90px;
+    top:200px;
+}
+#name{
+    font-size: xx-large;
+    background-color:var(--lookspur);
+    grid-area:name;
+    position:relative;
+}
+#skill_title{
+    font-size: xx-large;
+    background-color:var(--lookspur);
+    grid-area:skill_title;
+    left: 0px;
+    position:relative;
+
+}
+.topnav{
+    color:#0d1b63;
+    text-decoration: none;
+    padding:5px;
+    font-size: medium;
+font-family: "Arial";
+font-weight: 600;
+overflow: visible;
+position:relative;
+}
+
+nav{
+    background-color:var(--lookspur);
+    grid-area:nav;
+}
+
+#landing_page{
+    background-color: var(--lookspur);
+    grid-area: landing_page;
+    text-align: justify;
+    justify-content: center;
+    position: relative;
+    padding: 11rem;
+    font-size: larger;
+}
+
+
+#education{
+    background-color:var(--lookspur);
+    grid-area:education;
+    background-color:var(--lookspur);
+}
+
+
+
+#skillset1{
+    background-color:var(--lookspur);
+    grid-area:skillset1;
+}
+#skillset2{
+    background-color:var(--lookspur);
+    grid-area:skillset2;
+}
+#skillset3{
+    background-color:var(--lookspur);
+    grid-area:skillset3;
+}
+
+#pro_title{
+    background-color:var(--lookspur);
+    grid-area:pro_title;
+    font-size: xx-large;
+    left: 0px;
+    text-align:left;
+    position:relative;
+}
+
+#project1{
+    background-color:var(--lookspur);
+    grid-area:project1;
+}
+
+#experience{
+    background-color:var(--lookspur);
+    grid-area:experience;
+}
+#footer{
+    background-color:var(--white);
+    grid-area:footer;
+}
+
+.topnav .icon {
+    display: block;
+}
+.topnavclass a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    float: none;
+    text-align: left;
+}
+
+.topnavclass a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav a.icon {
+    display: block;
+    float: left;
+}
+.topnavclass {
+    overflow: visible;
+    position: relative;
+}
+ 
+
+
+
+
+@media only screen and (max-width:500px){
+    .container{
+        background-color:#817df2;
+        grid-template-columns: 1fr;
+grid-template-rows: 0.2fr 0.01fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+grid-template-areas: "nav"
+"name"
+"image"
+"landing_page"
+"education"
+"education"
+"education"
+"skill_title"
+"skillset1"
+"skillset2"
+"skillset3"
+"pro_title"
+"project1"
+"project1"
+"project1"
+"experience"
+"footer";
+    }
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .topnav a.icon {
+        display: block;
+        float: left;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a {
+        text-align: left;
+        float: none;
+        display: block;
+        top: 14px;
+        position: relative;
+    }
+
+    img{
+    position: absolute;
+    height: 50px;
+    width: 30px;
+    border-radius: 210px;
+    left: 50px;
+    top: 128px;
+    }
+    #landing_page{
+        padding: 2rem;
+        font-size: larger;
+    }
+   
+    #name{
+        left: 0px;
+    }
+    image{
+        display:none;
+    }
+}
+</style>
+</html>
